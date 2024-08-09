@@ -25,13 +25,11 @@ export const commands = [
       let div=document.createElement("div")
        div.innerHTML=`I'm a passionate developer who thrives on learning and creating.  My current focus is on web development, but I'm always exploring new technologies and eager to expand my skills into other areas of software engineering.  I believe that a strong foundation in coding principles is essential for building innovative solutions, regardless of the platform.
 
-When I'm not coding, you can find me [mention some of your hobbies or interests]. 
 
 You can connect with me on:
 
-* **<b>LinkedIn</b>**: [Your LinkedIn Profile URL]
-* **<b>GitHub</b>**: [Your GitHub Profile URL]
-* **<b>Twitter</b>**: [Your Twitter Profile URL]
+* **<a href='https://t.me/@Israel_tesfaye'>Telegram</a>**
+* **<a href='https://github.com/Israeltesfaye'>GitHub</a>**
 
 Let's build something amazing together!`
 document.body.appendChild(div)
