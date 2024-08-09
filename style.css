@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/*:root{
+   --bg:#222;
+   --text:white;
+   --main-font:Monospace;
+   --commands:darkgreen;
+}*/
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+ 
+:root{--bg-color: #1E1E1E;
+  --text-color: #EEEEEE;
+  --highlight-color: #FFD700;
+  --link-color: #87CEEB;
+  --command-color: #33CC33;
+  --error-color: #FF0000; 
+} 
+body{
+   padding:0;
+   margin:0;
+   background:var(--bg-color);
+   color:var(--text-color);
+   font-family:"Space mono";
+}
+#welcome{
+   width:auto;
+   height:30%;
+   display:flex;
+   flex-direction:column;
+   justify-content:space-between;
+   align-items:center;
+   text-align:center;
+   margin-bottom:15px;
+   overflow:visible;
+}
+* b{
+   color:var(--command-color);
+}
+.input{
+ height:10%;
+ display:flex;
+ align-items:center;
+ text-align:center;
+ cursor:none;
+}
+.input #editableDiv{
+   height:10%;
+   margin-left:5px;
+   padding:5px;
+   border:transparent;
+   background:transparent;
+   outline:none;
+   cursor:none;
+}
+#welcome h2 pre{
+   color:var(--command-color);
+   width:auto;
+   margin:0 10px 0 10px;
+}
+* li{
+   color:var(--highlight-color);
+   list-style:square;
+}
+* li:hover{
+   text-decoration:underline;
+}
+* a{
+   color:var(--link-color);
+}
+.project{
+   display:flex;
+   flex-direction:column;
+   align-items:center;
+}
+.project div{
+   width:40%;
+   display:flex;
+   justify-content:space-between;
+}
+.error{
+   color:var(--error-color);
+}
+.h{
+   color:var(--highlight-color);
+}
