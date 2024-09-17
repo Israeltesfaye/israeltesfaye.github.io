@@ -71,7 +71,6 @@ body{
    border:transparent;
    background:transparent;
    outline:none;
-   cursor:none;
 }
 #welcome h2 pre{
    color:var(--command-color);

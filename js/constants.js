@@ -1,7 +1,12 @@
 export const createElement=(html)=>{
  const div=document.createElement("div")
-  div.innerHTML=html 
+div.className="response"
   document.body.appendChild(div)
+ let typed = new Typed(".response:last-of-type", {
+      strings:[html],
+      typeSpeed: 45,
+      showCursor:false
+})
 }
 const projects=[
   {
@@ -51,7 +56,7 @@ document.body.appendChild(div)
 
 **Other Tools:**
 <b class="h">* **Git & GitHub:**</b>  Version control is my best friend. 🤝
-* **Agile Methodologies:**  I'm a team player and love collaborating on projects!  🤝 
+<b class="h">* **Agile Methodologies:**</b>  I'm a team player and love collaborating on projects!  🤝 
 
 I'm always eager to learn more, so if you see a skill I'm missing, let me know! 🚀 `)} 
     

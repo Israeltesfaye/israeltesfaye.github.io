@@ -1,5 +1,6 @@
-import {command} from "./command.js"
-//import {commands} from "./constants.js"
+import {command,listCommands} from "./command.js"
+import {commands} from "./constants.js"
+import {WelcomeTypeAnimation} from "./animation.js"
 var term=document.querySelector("#editableDiv")
 addEventListener("keyup",(e)=>{
    if(e.key=="Enter"){
@@ -11,10 +12,10 @@ addEventListener("keyup",(e)=>{
       }
    }
 })
-/*window.addEventListener("load", ()=>{
-   var div=document.createElement("div")
-   commands.forEach((c)=>{
-      div.innerHTML+=`<b>${c.name}</b><p>${c.description}</p>`
-   })
-   document.body.appendChild(div)
-})*/
+window.addEventListener("load", async()=>{
+    let typed = new Typed('#editableDiv', {
+      strings: ["commands"],
+      typeSpeed: 130,
+      showCursor:false
+})
+})

@@ -1,6 +1,6 @@
 import {commands} from "./constants.js"
 import {createElement} from "./constants.js"
-const listCommands=()=>{
+export const listCommands=()=>{
    var div=document.createElement("div")
    commands.forEach((c)=>{
       div.innerHTML+=`<b>${c.name}</b><p>${c.description}</p>`
