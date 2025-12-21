@@ -2,6 +2,21 @@
 
 :root {
   --font-family: 'Space Mono', monospace;
+
+  --background0: #0d1117;
+  --background1: #161b22;
+  --background2: #21262d;
+  --background3: #30363d;
+
+  --foreground0: #e6edf3;
+  --foreground1: #c9d1d9;
+  --foreground2: #8b949e;
+
+  --green: #9AC86D;
+  --yellow: #d4af37;
+  --red: #ff6b6b;
+  --blue: #58a6ff;
+  --cyan: #79c0ff;
 }
 
 * {
@@ -72,7 +87,7 @@ body {
 }
 
 .highlight {
-  color: var(--yellow);
+  color: var(--green);
   font-weight: 700;
 }
 
@@ -127,11 +142,11 @@ body {
 }
 
 .section-title {
-  color: var(--cyan);
+  color: var(--green);
   font-weight: 700;
   font-size: 1.2rem;
   margin: 1rem 0 0.5rem 0;
-  border-bottom: 2px solid var(--cyan);
+  border-bottom: 2px solid var(--green);
   padding-bottom: 0.25rem;
 }
 
@@ -140,7 +155,7 @@ body {
 }
 
 .skill-category h3 {
-  color: var(--yellow);
+  color: var(--green);
   margin: 0.5rem 0;
 }
 
@@ -164,11 +179,11 @@ body {
   margin: 1.5rem 0;
   padding: 1rem;
   background: var(--background2);
-  border-left: 4px solid var(--blue);
+  border-left: 4px solid var(--green);
 }
 
 .project-card h3 {
-  color: var(--blue);
+  color: var(--green);
   margin: 0 0 0.5rem 0;
 }
 
@@ -185,16 +200,17 @@ body {
 }
 
 .project-meta a {
-  color: var(--cyan);
+  color: var(--green);
   text-decoration: none;
 }
 
 .project-meta a:hover {
+  color: var(--cyan);
   text-decoration: underline;
 }
 
 .project-status {
-  color: var(--yellow);
+  color: var(--green);
 }
 
 .contact-list {
@@ -207,7 +223,7 @@ body {
 }
 
 .contact-list a {
-  color: var(--cyan);
+  color: var(--green);
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -215,7 +231,7 @@ body {
 }
 
 .contact-list a:hover {
-  color: var(--blue);
+  color: var(--cyan);
   text-decoration: underline;
 }
 
