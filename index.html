@@ -6,50 +6,26 @@
   <title>Israel Tesfaye | Full Stack Developer</title>
   <meta name="description" content="Terminal portfolio of Israel Tesfaye, a full-stack developer skilled in JavaScript, MERN stack, and web technologies." />
   <meta name="keywords" content="Israel Tesfaye, full stack developer, MERN, JavaScript, portfolio, web development" />
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="terminal">
+  <div class="terminal">
     <div class="terminal-header">
-      <span class="status-indicator red">●</span>
-      <span class="status-indicator yellow">●</span>
-      <span class="status-indicator green">●</span>
       <span class="terminal-title">israel@portfolio:~</span>
+      <span class="terminal-time" id="terminal-time"></span>
     </div>
-
-    <div class="terminal-content">
-      <div id="output">
-        <div class="welcome-message">
-          <pre class="ascii-art">$$$$$$\                                        $$\
-\_$$  _|                                       $$ |
-  $$ |   $$$$$$$\  $$$$$$\  $$$$$$\   $$$$$$\  $$ |
-  $$ |  $$  _____|$$  __$$\ \____$$\ $$  __$$\ $$ |
-  $$ |  \$$$$$$\  $$ |  \__|$$$$$$$ |$$$$$$$$ |$$ |
-  $$ |   \____$$\ $$ |     $$  __$$ |$$   ____|$$ |
-$$$$$$\ $$$$$$$  |$$ |     \$$$$$$$ |\$$$$$$$\ $$ |
-\______|\_______/ \__|      \_______| \_______|\__|</pre>
-
-          <p>Welcome to my terminal portfolio!</p>
-          <p>I'm <span class="highlight">Israel Tesfaye</span>, a passionate full-stack developer from Ethiopia.</p>
-          <br>
-          <p>Type <span is-="badge" variant-="green">help</span> to see available commands</p>
-        </div>
-      </div>
-
+    
+    <div class="terminal-body" id="terminal-body">
+      <div class="output" id="output"></div>
+      
       <div class="input-line">
         <span class="prompt">israel@portfolio:~$</span>
-        <input
-          type="text"
-          id="command-input"
-          autocomplete="off"
-          spellcheck="false"
-          autofocus
-        />
+        <input type="text" id="command-input" autocomplete="off" spellcheck="false" autofocus>
+        <span class="cursor" id="cursor"></span>
       </div>
     </div>
-  </main>
+  </div>
 
-  <script src="main.js" type="module"></script>
+  <script src="main.js"></script>
 </body>
 </html>
