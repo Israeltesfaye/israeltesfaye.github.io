@@ -138,6 +138,30 @@ const commands = {
 
 const input = document.getElementById('command-input');
 const output = document.getElementById('output');
+const terminalContent = document.querySelector('.terminal-content');
+
+function autoScroll() {
+  terminalContent.scrollTop = terminalContent.scrollHeight;
+}
+
+function typeWriter(element, text, speed = 30) {
+  return new Promise((resolve) => {
+    let index = 0;
+    element.textContent = '';
+
+    function type() {
+      if (index < text.length) {
+        element.textContent += text.charAt(index);
+        index++;
+        setTimeout(type, speed);
+      } else {
+        resolve();
+      }
+    }
+
+    type();
+  });
+}
 
 function executeCommand(commandText) {
   const trimmedCommand = commandText.trim().toLowerCase();
@@ -146,6 +170,8 @@ function executeCommand(commandText) {
   historyDiv.className = 'command-history';
   historyDiv.innerHTML = `<span class="prompt">israel@portfolio:~$</span> <span class="command">${commandText}</span>`;
   output.appendChild(historyDiv);
+
+  autoScroll();
 
   if (!trimmedCommand) {
     return;
@@ -167,7 +193,7 @@ function executeCommand(commandText) {
     output.appendChild(errorDiv);
   }
 
-  output.scrollTop = output.scrollHeight;
+  setTimeout(autoScroll, 100);
 }
 
 input.addEventListener('keydown', (e) => {
@@ -183,4 +209,7 @@ document.addEventListener('click', () => {
   input.focus();
 });
 
-input.focus();
+window.addEventListener('load', () => {
+  autoScroll();
+  input.focus();
+});
